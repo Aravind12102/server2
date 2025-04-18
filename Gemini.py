@@ -37,7 +37,7 @@ def get_form_text(form_url):
         return f"Error loading form: {e}"
 
 def get_gemini_response(input_text):
-    genai_client = genai.Client(api_key="YOUR_GEMINI_API_KEY")
+    genai_client = genai.Client(api_key="AIzaSyAfO8S5sipCLNhMgt70HtpFDrpuI7nanfw")
     response = genai_client.models.generate_content(
         model="gemini-2.0-flash",
         contents=input_text
